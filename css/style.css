@@ -12,7 +12,7 @@
     right: 0;
 }
 body {
-    height: 1000px;
+    height: 1300px;
     background-color: #ececec;
 }
 #navigation {
@@ -45,6 +45,116 @@ a {
     align-items: center;
     justify-content: space-between;
 }
+
+#title {
+    font-family: sans-serif;
+    font-size: 24px;
+}
+#email {
+    height: 25px;
+    width: 250px;
+    margin: auto;
+}
+#submit {
+    width: 140px;
+    height: 30px;
+    font-weight: 900;
+    background-color: #ffd92f;
+    border: none;
+    border-radius: 3px;
+}
+
+#features {
+    width: 70%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+.feature-wrapper {
+    display: flex;
+    flex-direction: row;
+    margin-top: 40px;
+    justify-content: space-between;
+    font-family: sans-serif;
+}
+.feature-icons {
+    height: 80px;
+}
+.feature-text {
+    width: 80%;
+}
+
+#how-it-works {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+#trombones {
+    width: 40%;
+}
+
+#pricing {
+    width: 70%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.card {
+    width: 28%;
+    height: 300px;
+    border: 1px solid black;
+    margin-top: 60px;
+    font-family: sans-serif;
+}
+.card-title-wrapper {
+    height: 15%;
+    background-color: #cacaca;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card-title {
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+.price {
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+h4 {
+    margin-top: 20px;
+    font-weight: 200;
+}
+.select-button {
+    width: 40%;
+    height: 13%;
+    margin-top: 10px;
+    background-color: #ffd92f;
+    border: none;
+    border-radius: 3px;
+}
+#footer {
+    width: 70%;
+    height: 100px;
+    background-color: #cacaca;
+    margin: 70px auto;
+    border-radius: 5px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-family:  sans-serif;
+    font-size: 1.2rem;
+}
+.footer-items {
+    display: flex;
+    justify-content: space-between;
+}
+h6 {
+    color: gray;
+}
+
 @media (max-width: 800px) {
     #logo {
         width: 70%;
@@ -63,31 +173,43 @@ a {
     #form {
         margin-top: 140px;
     }
-}
-#title {
-    font-family: sans-serif;
-    font-size: 24px;
-}
-#email {
-    height: 25px;
-    width: 250px;
-    margin: auto;
-}
-#submit {
-    width: 140px;
-    height: 30px;
-    font-weight: 900;
-    background-color: #ffd92f;
-    border: none;
-    border-radius: 3px;
+    .feature-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+    .feature-icons {
+        width: 100px;
+    }
+    .feature-text {
+        width: 100%;
+    }
+    #trombones {
+        width: 70%;
+    }
+    #pricing {
+        flex-direction: column;
+        align-items: center;
+    }
+    .card {
+        width: 50%;
+    }
 }
 @media (max-width: 450px) {
     #title {
         font-size: 18px;
     }
+    #pricing {
+        font-size: 0.8rem;
+    }
+    .card {
+        width: 70%;
+    }
 }
 @media (max-width: 350px) {
     #title {
         font-size: 14px;
+    }
+    .feature-wrapper {
+        font-size: 0.8rem;
     }
 }
